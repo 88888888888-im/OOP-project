@@ -1,0 +1,30 @@
+Solve and Style
+ 1. User class
+name (String) - player's name
+points (int)
+
+Mathods
+earnPoints()
+buyItem (Item item) - Spends points to buy clothes
+
+2. Equation class
+question - math problem
+answer - correct answer
+difficulty - level of difficulty 
+
+Methods
+generateEquation() - generates random math problems
+checkAnswer() - checks if the answer is correct or not
+
+3. Character class
+name (String) 
+
+Methods
+changeOutfit()
+addAccessories()
+
+4. Clothing class
+price (int)
+
+Method
+getPrice()

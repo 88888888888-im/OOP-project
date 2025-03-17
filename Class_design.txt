@@ -1,0 +1,34 @@
+Virtual pet Simulation
+
+The Virtual Pet Simulator is a game where you take care of a pet by feeding it, playing with it, and keeping it happy.
+ The pet will have needs, and you must take care of them to keep it healthy, and games, that users play to keep pet happy.
+
+
+1. Pet (Main class)
+name (String) - pet's name
+age (int) - pet's age
+hunger (int) - hunger level
+energy (int)- energy level
+happiness (int) - happiness level
+
+Methods
+eat() - will increase hunger level
+sleep() - will increase energy level
+play() - increases happiness level, decreases energy level
+
+2. Game class
+
+Methods
+startGame()
+updateStats() 
+
+
+3. User class
+username (String) - player's name 
+points (int) - rewards
+
+Method
+feedPet() 
+...
+
+
