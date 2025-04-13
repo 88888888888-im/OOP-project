@@ -1,0 +1,75 @@
+public class LogicTester {
+    public static void main(String[] args) {
+        
+        Dog dog = new Dog("Rex", 10, "Conecorso");
+        Cat cat = new Cat("Janna", 2, "Orange");
+        Monkey monkey = new Monkey("Azniv", 4, "Banana");         
+        
+        System.out.println("The initial Pet Statuses are:");
+        System.out.println(dog.showStatus());
+        System.out.println(cat.showStatus());
+        System.out.println(monkey.showStatus());
+        System.out.println();
+
+
+        Pet[] initialPets = {dog, cat};
+        User user = new User("Manushak", initialPets);
+        
+       
+        user.addPet(monkey);
+       
+        System.out.println("User's Pets:");
+        System.out.println(user.showAllPets());
+        System.out.println();
+
+        
+        System.out.println("Testing Pet Interactions:");
+        
+        
+        System.out.println("Interacting with Rex:");
+        System.out.println("Before feeding: " + dog.showStatus());
+        dog.feed();
+        System.out.println("After feeding: " + dog.showStatus());
+        dog.play();
+        System.out.println("After playing: " + dog.showStatus());
+        dog.sleep();
+        System.out.println("After sleeping: " + dog.showStatus());
+        dog.tick();
+        System.out.println("After tick: " + dog.showStatus());
+        System.out.println();
+
+       
+        System.out.println("Interacting with Janna:");
+        System.out.println("Before feeding: " + cat.showStatus());
+        cat.feed();
+        System.out.println("After feeding: " + cat.showStatus());
+        cat.play();
+        System.out.println("After playing: " + cat.showStatus());
+        cat.sleep();
+        System.out.println("After sleeping: " + cat.showStatus());
+        cat.tick();
+        System.out.println("After tick: " + cat.showStatus());
+        System.out.println();
+
+        
+        System.out.println("Interacting with Azniv:");
+        System.out.println("Before feeding: " + monkey.showStatus());
+        monkey.feed();
+        System.out.println("After feeding: " + monkey.showStatus());
+        monkey.play();
+        System.out.println("After playing: " + monkey.showStatus());
+        monkey.sleep();
+        System.out.println("After sleeping: " + monkey.showStatus());
+        monkey.tick();
+        System.out.println("After tick: " + monkey.showStatus());
+        System.out.println();
+
+        
+        Pet retrievedPet = user.getPet("Rex");
+        if (retrievedPet != null) {
+            System.out.println("The updated version of the pets: " + retrievedPet.showStatus());
+        } else {
+            System.out.println("No pet is found!");
+        }
+    }
+}
